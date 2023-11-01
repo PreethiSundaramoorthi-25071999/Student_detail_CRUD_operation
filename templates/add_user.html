@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block body %}
+<div class="row">
+    <div class="col-8 mx-auto">
+        <h2>Add Student</h2>
+        <hr>
+        <form action="{{url_for('add_user')}}" method="post">
+            <div class="form-group">
+                <input type="text" name="Name" id="Name" required=1
+                placeholder="Please Enter the Name of the Student"
+                class="form-control">
+            </div><br><br>
+            <div class="form-group">
+                <input type="number" name="Age" id="Age" required=1
+                placeholder="Please Enter the Age of the Student"
+                class="form-control">
+            </div><br><br>
+            <div class="form-group">
+                <input type="text" name="Gender" id="Gender" required=1
+                placeholder="Please Enter the Gender of the Student"
+                class="form-control">
+            </div><br><br>
+            <div class="form-group">
+                <input type="text" name="Language" id="Language" required=1
+                placeholder="Please Enter the Language of the Student"
+                class="form-control">
+            </div><br><br>
+            <div class="form-group">
+                <input type="text" name="Preference" id="Preference" required=1
+                placeholder="Please Enter the Name of the Student"
+                class="form-control">
+            </div><br><br>
+
+            <input type="submit" value="Add Student" class="btn btn-primary form-control">
+
+        
+        </form>
+    </div>
+</div>
+
+{% endblock body %}
